@@ -13,7 +13,6 @@ import WaitingModal from './components/waiting-modal'
 import AsyncLoad from './services/async-load'
 import SelectServerButton from './components/servers/select-server-button'
 import Footer from './components/footer'
-import NavMenu from './components/nav-menu'
 import AppBody from './components/app-body'
 
 // Default restURL for a back-end server.
@@ -118,7 +117,6 @@ class App extends React.Component {
       <>
         <GetRestUrl />
         <LoadScripts />
-        <NavMenu menuHandler={this.onMenuClick} />
 
         {
           this.state.showStartModal
